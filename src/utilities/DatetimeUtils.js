@@ -28,7 +28,7 @@ export function transformDateFormat() {
     hourCycle: 'h23',
   });
 
-  const newFormatDate = year.toString().concat('-', month, '-', day, ' ', time);
+  const newFormatDate = year.toString().concat('-',month, '-',day,' ',time);
   return newFormatDate;
 }
 

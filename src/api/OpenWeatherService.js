@@ -1,7 +1,7 @@
 const GEO_API_URL = 'https://wft-geo-db.p.rapidapi.com/v1/geo';
 
 const WEATHER_API_URL = 'https://api.openweathermap.org/data/2.5';
-const WEATHER_API_KEY = 'Your API KEY';
+const WEATHER_API_KEY = '6f7e4a79da42653aa4d91a5c0a1a4d47';
 
 const GEO_API_OPTIONS = {
   method: 'GET',
@@ -11,7 +11,7 @@ const GEO_API_OPTIONS = {
   },
 };
 
-export async function fetchWeatherData(lat, lon) {
+export async function fetchWeatherData(lat,lon) {
   try {
     let [weatherPromise, forcastPromise] = await Promise.all([
       fetch(
